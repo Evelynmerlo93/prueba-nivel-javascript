@@ -13,6 +13,6 @@ export function getFizzBuzzResult(num) {
   } 
   //Si no es divisible por ninguno, devuelve el numero texto
   else {
-    return String(num); // me falta hacer verificaciones NaN
+    return String(num); // me falta hacer sus verificaciones NaN
   }
 }
