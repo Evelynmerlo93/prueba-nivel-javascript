@@ -1,14 +1,14 @@
-import { expect, test } from 'vitest';
-import { isValidPlateFormat } from '../js/validator.js';
+import { test, expect } from 'vitest';
+import { getFizzBuzzResult } from '../src/scripts/fizzbuzz.js';
 
-test('debería aceptar una matrícula válida con formato correcto', () => {
-  expect(isValidPlateFormat('1234 BCD')).toBe(true);
+test('Si el numero es 9 (y es divisible por 3), debe devolver "Fizz"', () => {
+  expect(getFizzBuzzResult(9)).toBe("Fizz");
 });
 
-test('debería rechazar una matrícula sin espacio', () => {
-  expect(isValidPlateFormat('1234BCD')).toBe(false);
+test('Si el numero es 10( y es divisible por 5 ), debe devolver "Buzz"', () => {
+  expect(getFizzBuzzResult(10)).toBe("Buzz");
 });
 
-test('debería rechazar una matrícula con letras prohibidas', () => {
-  expect(isValidPlateFormat('1234 AEI')).toBe(false); // la A, E, I no están permitidas
+test('Si el numero es 15 ( y es divisible por 3 y 5 ), entonces debe devolver "FizzBuzz"', () => {
+  expect(getFizzBuzzResult(15)).toBe("FizzBuzz"); 
 });
