@@ -11,7 +11,7 @@ const divResultado = document.querySelector("#respuesta");
 
 
 //una unica funcion para pintar pantalla
-function pintarLaPantalla(texto) {
+function mostrarEnPantalla(texto) {
   divResultado.textContent = texto;
 }
 
@@ -37,5 +37,5 @@ const resultadoCalculado = getFizzBuzzResult(numero);
 
 
   //Muestro el resultado en la pantalla
-  pintarLaPantalla(`Resultado: ${resultadoCalculado}`);
+  mostrarEnPantalla(`Resultado: ${resultadoCalculado}`);
 });
